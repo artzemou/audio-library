@@ -1,0 +1,12 @@
+
+.audio-library {
+    flex-wrap: wrap;
+    display: flex;
+    padding: 1rem;
+    li {
+        flex: 0 0 calc(100%);
+    }
+    .timecode, .zoom {
+        display: none;
+    }
+}

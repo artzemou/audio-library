@@ -1,0 +1,7 @@
+{
+  "name": "audio-library",
+  "description": "Audio library",
+  "keywords": ["node", "express", "heroku"],
+  "image": "heroku/nodejs",
+  "stack": "heroku-22"
+}

@@ -1,0 +1,84 @@
+
+    .UsersList{
+        display: flex;
+        flex-direction: column;
+
+      
+      .Sign-up-form,
+      .Create-user-form {
+        display: flex;
+        background-color: #eeeeee;
+        
+      }
+      
+      .User-item, .Tool-bar {
+        display: flex;
+        align-items: center;
+        
+        
+      }
+      .User-item{
+        padding: .5rem;;
+        border-bottom: 1px #d9d9d9 solid;
+      }
+      
+      .User-details{
+        display: flex;
+        flex-direction: column;
+      }
+      .User-detail{
+        padding: 1rem;
+        border-bottom: 1px #d9d9d9 solid;
+      }
+      
+      .User-detail:empty{
+        display: none;
+      }
+      
+      button[type="submit"]{
+        cursor: pointer;
+        background: transparent;
+        border: 0;
+      }
+      input{
+        margin: .5rem;
+        padding: .25rem;
+        border: 0;
+        background-color: #f8f8f8;
+      }
+      input[type="date"]{
+        height: calc(27rem / 16);
+      }
+      
+      .material-icons{
+        color: #333333;
+      }
+      
+      @media screen and (max-width: 960px) {
+        .User-item-content , .Create-user-form li {
+          width: 100%
+        }
+        .Create-user-form , .Sign-up-form {
+          flex-direction: column;
+        } 
+        .User-item{
+          position: relative;
+          margin-top: 3rem;
+        }
+        .Tool-bar{
+          position: absolute;
+          top: -2rem;
+          right: 1rem;
+        }
+        button[type="submit"]{
+          position: absolute;
+          top: -2rem;
+          right: calc(48px + 1rem);
+        }
+      
+        .Create-user-form button[type="submit"]{
+          right: 0rem;
+        }
+      }
+      
+    }

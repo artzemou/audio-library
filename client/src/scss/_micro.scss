@@ -1,0 +1,9 @@
+#micro {
+  wave{
+    overflow: hidden !important;
+
+  }
+  &--hidden{
+    display: none;
+  }
+}
